@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.scroll-container {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 0;
+    
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.btn-img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: contain; 
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
